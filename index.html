@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                font-family: 'Aboreto', cursive;
+            }
+
+            .login-page {
+                position: relative;
+                background: #FFFFFF;
+                max-width: 360px;
+                padding: 45px;
+                text-align: center;
+                box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+                margin-top: 4%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            input {
+                padding: 8px 16px;
+                background-color: #f2f2f2;
+                border: none;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                height: 250px;
+                justify-content: space-around;
+            }
+
+            button {
+                padding: 8px;
+                font-size: 24px;
+                font-weight: 600;
+                text-transform: capitalize;
+                background-color: #4CAF50;
+                border: none;
+            }
+
+            button:hover {
+                transition: all 0.3s;
+                background-color: darkviolet;
+                scale: 1.03;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="login-page">
+            <form>
+                <input type="email" placeholder="email" />
+                <input type="password" placeholder="password" />
+                <button>login</button>
+                <p class="message">Already registered? <a href="#">Sign In</a></p>
+            </form>
+        </div>
+    </body>
+
+</html>
